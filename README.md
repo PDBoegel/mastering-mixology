@@ -1,6 +1,6 @@
-# Mastering Mixology+ (Helper)
+# Mastering Mixology Extended
 
-Enhanced fork of [Hexagon's Mastering Mixology plugin](https://github.com/hex-agon/mastering-mixology). All baseline credit goes to the original author; this fork adds multi-reward tracking, paste-quantity goals, Chugging Barrel quantity, an adaptive meta-strategy highlighter, and a full accessibility section (dyslexic / colorblind mode with custom colours for blocks, levers, and progress bars).
+Fork of [Hexagon's Mastering Mixology plugin](https://github.com/hex-agon/mastering-mixology). All baseline credit goes to the original author; this fork adds multi-reward tracking, paste-quantity goals, Chugging Barrel quantity, an adaptive meta-strategy highlighter, and a full accessibility section (dyslexic / colorblind mode with custom colours for blocks, levers, and progress bars).
 
 ### Features
 * Appends the potion recipe to the standard minigame interface
