@@ -54,7 +54,7 @@ import static work.fking.masteringmixology.PotionComponent.AGA;
 import static work.fking.masteringmixology.PotionComponent.LYE;
 import static work.fking.masteringmixology.PotionComponent.MOX;
 
-@PluginDescriptor(name = "Mastering Mixology")
+@PluginDescriptor(name = "Mastering Mixology+")
 public class MasteringMixologyPlugin extends Plugin {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MasteringMixologyPlugin.class);
