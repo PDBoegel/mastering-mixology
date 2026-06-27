@@ -13,6 +13,7 @@ Fork of [Hexagon's Mastering Mixology plugin](https://github.com/hex-agon/master
 * **Adaptive meta-strategy highlight** — colours each order green (brew) or
   red (skip) according to a state-machine policy proven near-optimal by
   Monte-Carlo simulation (see below)
+* Optional misclick protection: lock idle stations and cap Concentrate spam-clicks
 
 ### The adaptive meta-strategy in one paragraph
 
