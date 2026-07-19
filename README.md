@@ -81,10 +81,24 @@ a reward updates the colours immediately.
 
 ### Changelog
 
-Entries tagged `V<upstream>-extX.Y` are Extended-fork releases; other
+Entries tagged `V<upstream>-extX.Y.Z` are Extended-fork releases; other
 entries are inherited from upstream. `<upstream>` mirrors the upstream
-base, `X` bumps on new features, `Y` on ext-only fixes; the ext counter
-resets when upstream ships a new version.
+base; `X` is the fork's major series (currently 1), `Y` bumps on new
+features, `Z` bumps on ext-only fixes. The ext counters reset when
+upstream ships a new version (e.g. upstream `1.9.2` → this fork
+resumes at `1.9.2-ext1.0.0`).
+
+#### V1.9.1-ext1.1.0
+* **Misclick protection** (new config section, all toggles off by
+  default). Contributed by @Mitchole.
+  * *Lock idle stations* — per-station toggles for Alembic, Agitator,
+    and Retort. Consumes the operate click when the station is empty
+    and no unfulfilled order needs it with the potion you're currently
+    holding. Examine and other options are untouched.
+  * *Cap Concentrate clicks* — stops Retort clicks once one more would
+    complete the potion; the bar coasts to completion via passive fill,
+    so spare clicks can't load the next potion. Self-calibrating: adapts
+    to higher Herblore levels that change per-click progress.
 
 #### V1.9.1-ext1.0
 First Extended-fork release; baseline upstream v1.9.1.
