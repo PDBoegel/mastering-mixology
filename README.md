@@ -80,17 +80,33 @@ a reward updates the colours immediately.
 
 ### Changelog
 
-#### V1.10.0
-* New **Recommended-Potion Highlight** feature — colours each order green
-  (brew it) or red (skip it) according to the adaptive meta-strategy. Off
-  by default; enable from the plugin config. Requires at least one reward
-  selected in *Reward Tracking* to compute against.
-* New **Reward Threshold Notification** section consolidating per-reward
-  toggles plus quantity controls for the four repeatable items; fires a
-  single notification when your resin pool first meets the combined cost
-  of every ticked reward.
-* The overlay's progress bars now sum every ticked reward's cost (rather
-  than showing only the legacy single-reward selection).
+Entries tagged `V<upstream>-extX.Y` are Extended-fork releases; other
+entries are inherited from upstream. `<upstream>` mirrors the upstream
+base, `X` bumps on new features, `Y` on ext-only fixes; the ext counter
+resets when upstream ships a new version.
+
+#### V1.9.1-ext1.0
+First Extended-fork release; baseline upstream v1.9.1.
+
+**Reward tracking**
+* Multi-select goal — tick any subset of the ten rewards; overlay shows
+  per-resin progress bars and a single notification when the combined
+  cost is met.
+* Quantity fields for every repeatable reward (packs, aldarium,
+  Chugging Barrel).
+
+**Meta-strategy**
+* Recommended-Potion Highlight — colours each order green/red per an
+  adaptive state-machine policy (Monte-Carlo tuned; see above). Off by
+  default; needs at least one reward ticked.
+
+**Accessibility** (new config section)
+* Dyslexic / Colorblind Mode — swaps M/A/L letters for colour blocks in
+  the order list and inventory tags.
+* Configurable recommend/skip text colours (default gold / charcoal).
+* Configurable per-resin colours (defaults `#9D4EDD` / `#00FFB3` /
+  `#FF6D00`) applied to blocks, inventory tags, lever highlights, and
+  progress-bar fills; live re-paint on change.
 
 #### V1.9.1
 * Fixed the `Fix Alembic quick-action sound effect` feature to work with the latest RuneLite version
